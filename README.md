@@ -1,1 +1,1 @@
-basic datastruct implemention in python3
+basic DataStruct implemention in python3
