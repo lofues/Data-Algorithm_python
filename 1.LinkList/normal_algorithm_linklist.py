@@ -1,6 +1,6 @@
 '''
 	完成以下常见链表代码
-	1.单链表反转
+	1.单链表反转：递归与非递归
  	2.链表中环的检测
 	3.两个有序链表的合并
 	4.删除链表倒数第n个节点
@@ -27,6 +27,8 @@ def reversed_link(l : Linklist) -> Linklist:
 		temp.next = reversed_head.next
 		reversed_head.next = temp
 	return reversed_head
+
+def reversed
 
 def check_loop(l : Linklist) -> bool:
 	'''

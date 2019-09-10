@@ -1,6 +1,6 @@
 """
     用小顶堆动态维护数组的前k大元素
-    Author By:Lofues
+    Author By: Lofues
 """
 from heap import MinHeap
 import random
