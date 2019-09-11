@@ -28,7 +28,26 @@ def reversed_link(l : Linklist) -> Linklist:
 		reversed_head.next = temp
 	return reversed_head
 
-def reversed
+def reversed_link_iteration(l : Linklist) -> Linklist:
+	"""
+		翻转单链表:迭代
+	"""
+	pre,cur = None,l
+	while cur:
+		cur.next,pre,cur = pre,cur,cur.next
+	return pre
+
+def reversed_link_recursion(l : Linklist) -> Linklist:
+	"""
+		翻转单链表：递归
+	"""
+	if l is None or l.next is None:
+		return l
+	else:
+		newhead = reversed_link_recursion(l.next)
+		l.next.next = l
+		l.next = None
+		return newhead
 
 def check_loop(l : Linklist) -> bool:
 	'''
@@ -131,10 +150,20 @@ def main():
 	print_list(l2)
 	l3 = merge_sortedList(l1,l2)
 	print_list(l3)
-	print(remove_nth_from_end)
+	# print('-----remove 3th from the end----')
+	# print_list(remove_nth_from_end(l3,3))
+	print('---reversed the link iterable---')
+	l3 = reversed_link_iteration(l3)
+	print_list(l3)
+	print('---reversed the link---')
+	l3 = reversed_link_recursion(l3)
+	print_list(l3)
+
 
 if __name__ == '__main__':
 	main()
+
+
 
 
 
