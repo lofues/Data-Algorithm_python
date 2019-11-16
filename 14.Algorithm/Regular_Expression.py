@@ -1,5 +1,5 @@
 """
-    回溯算法解决正则匹配
+    回溯算法解决正则匹配   *匹配一个或多个   .匹配任意一个
 """
 
 
@@ -33,6 +33,4 @@ class Solution:
 
 
 
-a = Solution()
-print(a.solution('aaa','.a.'))
 
