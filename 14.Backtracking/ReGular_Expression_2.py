@@ -1,6 +1,8 @@
 """
     用回溯法解决正则表达式匹配  *匹配任意多个前一个字符 .匹配任意一个字符
 """
+
+
 class Solution(object):
     def isMatch(self, s, p):
         # 若模式串匹配完毕  若主串结尾则结束
